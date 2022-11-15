@@ -17,4 +17,8 @@
     <Folder Include="Data\Input\" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="MKDIR &quot;$(TargetDir)\tessdata&quot;&#xD;&#xA;COPY &quot;$(SolutionDir)\PortRoyalist\tessdata&quot; &quot;$(TargetDir)\tessdata&quot;&#xD;&#xA;" />
+  </Target>
+
 </Project>

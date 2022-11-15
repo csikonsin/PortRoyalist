@@ -29,23 +29,30 @@ namespace PortRoyalist
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ScreenShotParser.Init();
-            var ssp = new ScreenShotParser();
+            FileStructure.Init();
 
-            ssp.PrepareScreenshots();
+            var preparer = new ScreenShotPreparer();
 
-            var path = ssp.ParseScreenshots();
+            var di = preparer.PrepareScreenshot(new FileInfo(FileStructure.MapInputDir("ct.png")));
 
-            if(path != null)
-            {
-                var winFormImg = System.Drawing.Image.FromFile(path.FullName);
-                img.Source = ImageUtils.ToImageSource(winFormImg, ImageFormat.Jpeg);
-                img.Width = winFormImg.Width;
-                img.Height= winFormImg.Height;
-            }
-            else{
-                this.Close();
-            }
+            var parser = new ScreenShotParser();
+
+            parser.ParseScreenshot(di);
+
+           // ssp.PrepareScreenshots(new FileInfo(MapPath(");
+
+            //var path = ssp.ParseScreenshots();
+
+            //if(path != null)
+            //{
+            //    //var winFormImg = System.Drawing.Image.FromFile(path.FullName);
+            //    //img.Source = ImageUtils.ToImageSource(winFormImg, ImageFormat.Jpeg);
+            //    //img.Width = winFormImg.Width;
+            //    //img.Height= winFormImg.Height;
+            //}
+            //else{
+            //    this.Close();
+            //}
 
 
         }

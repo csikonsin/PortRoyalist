@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortRoyalist", "PortRoyalist\PortRoyalist.csproj", "{4A8E10F0-DEAF-4115-AB42-41BE9E2779B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortRoyalist.Tests", "PortRoyalist.Tests\PortRoyalist.Tests.csproj", "{4FBC91B9-7A65-47A2-AE14-175A671B5ACE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4A8E10F0-DEAF-4115-AB42-41BE9E2779B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8E10F0-DEAF-4115-AB42-41BE9E2779B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8E10F0-DEAF-4115-AB42-41BE9E2779B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBC91B9-7A65-47A2-AE14-175A671B5ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBC91B9-7A65-47A2-AE14-175A671B5ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBC91B9-7A65-47A2-AE14-175A671B5ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBC91B9-7A65-47A2-AE14-175A671B5ACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
